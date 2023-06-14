@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscando elementos</title>
+</head>
+<body>
+  
+</body>
+</html>
+<main id="parent-of-parent">
+    <section id="parent">
+      <section id="first-child"></section>
+      <section id="where-are-you">
+        <section id="first-child-of-child"></section>
+      </section>
+      Attention!
+      <section id="third-child"></section>
+      <section id="fourth-and-last-child"></section>
+    </section>
+  </main>
+  <script>
+     // Acesse o elemento where-are-you.
+   const whereAreYou = document.getElementById("where-are-you");
+
+   // Acesse parent a partir de where-are-you e adicione uma color a ele.
+   const parent = whereAreYou. parentElement;
+   parent.style.color= ("blue");
+
+// Acesse o first-child-of-child e adicione um texto a ele.
+   const firstChildOfChild = whereAreYou.firstElementChild;
+   firstChildOfChild.innerText = "hello word";
+
+// Acesse o first-child a partir de parent.
+   const firstChild = parent.firstElementChild;
+
+ // Acesse o first-child a partir de where-are-you.
+const primeiroFilho2 = whereAreYou.previousElementSibling;
+
+      // Acesse o texto Attention! a partir de where-are-you.
+const Attention = whereAreYou.nextSibling;
+
+   // Acesse o third-child a partir de where-are-you.
+    const thirdChild = whereAreYou.nextElementSibling;
+
+     // Acesse o third-child a partir de parent.
+     const thirdChild2 = parent.lastElementChild.previousElementSibling
+    
+
+  </script>
+
+<!-- ANOTAÇOES SOBRE OS TEMAS UTILIZADOS PARA FAZER EXERCICIOS
+parentElement: Retorna o elemento-pai. Nesse caso, se o nó-pai não for um elemento HTML, essa propriedade retornará null.
+
+childNodes: Retorna um NodeList com todos os nós filhos.
+
+children: Retorna um HTMLCollection com todos os elementos filhos.
+
+firstElementChild: Retorna o primeiro elemento filho.
+
+lastElementChild: Retorna o último elemento filho.
+
+nextElementSibling: Retorna o próximo elemento.
+
+previousElementSibling: Retorna o elemento anterior.
+
+console.log(document.getElementById('start').nextSibling) // nó -->
