@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ultimo exercicio do dia 2</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // COLOQUE SEU CÓDIGO AQUI
+    // 1  Adicione a tag h1 com o texto TrybeTrip - Agência de Viagens como filho da tag body; 
+      const h1FilhoDoBody = document.createElement('h1');
+      h1FilhoDoBody.className = 'title';
+      h1FilhoDoBody.innerText = 'TrybeTrip - Agência de Viagens';
+      document.body.appendChild('h1FilhoDoBody');
+
+    //  2 Adicione a tag main com a classe main-content como filho da tag body; 
+    const man = document.createElement('main');
+    man.className = 'main-content';
+    document.body.appendChild('man');
+
+    //3 Adicione a tag section com a classe center-content como filho da tag main criada no passo 2
+    const section = document.createElement('section');
+    section.className = 'center-content';
+    man.appendChild('section');
+    // Troque a cor de fundo do elemento-pai da `section` criada no passo 3 (aquela que possui a classe `center-content`) para a cor verde;
+    const section = document.getElementsByClassName('center-content')[0];
+    section.parentNode.style.backgroundColor = 'green';
+
+    //4 Adicione a tag p como filho do section criado no passo 3 e coloque algum texto; 
+    const p = document.createElement('p');
+    p.innerText = 'adicionando um p';
+    sectio.appendChild('p');
+
+    //5 Adicione a tag section com a classe left-content como filho da tag main criada no passo 2; 
+    const sectionFilhoDaMain = document.createElement('section');
+    sectionFilhoDaMain.className = 'left-content';
+    man.appendChild('sectionFilhoDaMain');
+    //bonus Remova a `section` criada no passo 5 (aquela que possui a classe `left-content`) por meio da função `.removeChild()`;
+    const sectionFilhoDaMain = documente.getEmentsByClassName('left-content')[0];
+    man..removeChild('sectionFilhoDoMain')
+
+    //6 Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
+    const sectionFilhoDaMain2 = document.createElement('section');
+    sectionFilhoDaMain2.className = 'right-content';
+    man.appendChild('sectionFilhoDaMain2');
+    // bonus Centralize a `section` criada no passo 6 (aquela que possui a classe `right-content`). Dica: para centralizar, basta configurar o `margin-right: auto` da `section`
+    const sectionFilhoDaMain2 = documente.getEmentsByClassName('right-content');
+    sectionFilhoDaMain2.style.marginRight = 'auto'
+
+//7 Adicione uma imagem com src configurado para valor https://picsum.photos/200 e classe small-image. Esse elemento deve ser filho do section criado no passo 5; 
+const imagem = document.createElement('img');
+imagem.className = 'small-image';
+imagem.src = 'https://picsum.photos/200'
+sectionFilhoDaMain.appendChild('imagem');
+
+//8 Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um, dois, três, e assim por diante. Essa lista deve ser filha do section criado no passo 6; 
+const listaNaoOrdenada = document.createElement('ul');
+listaNaoOrdenada.appendChild('li');
+let number = ['um, dois, tres, quatro, cinco, seis, sete, oito, nove, dez']
+for(let index = 0; index < number.length ; index += 1){
+    const li = document.createElement('li')
+    li.innerText = number[index];
+    listaNaoOrdenada.uppendChild('li')
+}
+sectionFilhoDaMain2.appendChild('ul');
+// Remova os dois últimos elementos (nove e dez) da lista criada no passo 8.
+ul.lastChild.remove()
+ul.lastChild.remove()
+
+//9 Adicione 3 tags h3, todas filhas do main criado no passo 2. 
+for(let index = 0; index < h3.length +3; index += 1){
+    const h3 = document.createElement('h3');
+    h3.innerText = index;
+     // bonus Adicione a classe description nas 3 tags h3 criadas;
+    h3[index].className = 'description';
+    man.appendChild('adicionandoH3');
+}
+
+    </script>
+  </body>
+</html>
+</body>
+</html>

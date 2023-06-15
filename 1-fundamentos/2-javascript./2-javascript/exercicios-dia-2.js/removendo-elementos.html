@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Removendo elementos</title>
+</head>
+<body>
+    <main id="father-of-father">
+        <section id="parent">
+          <section id="first-child">
+            <h2>Primeiro Filho</h2>
+          </section>
+          <section id="where-are-you">
+            <h2>Elemento que você deve remover</h2>
+          </section>
+          <section id="third-child">
+            <h2>Terceiro Filho</h2>
+          </section>
+          <section id="quartoEUltimoFilho">
+            <h2>Quarto Filho</h2>
+          </section>
+          
+        </section>
+      </main>
+    <script>
+
+// Remova a tag h2, filha do elemento where-are-you. 
+const whereAreYou = document.getElementById('where-are-you');
+   const h2ARemover = whereAreYou.firstElementChild;
+   whereAreYou.removeChild(h2ARemover);
+   
+
+
+
+// // const parent = document.getElementById('parent');
+
+// // const allChildren = parent.childNodes;
+
+
+// // for (let index = allChildren.length - 1; index >= 0; index -= 1) {
+
+// //   const currentChild = allChildren[index];
+
+
+// //   if (currentChild.id === 'where-are-you') { // verifica se o id do filho atual é igual a 'where-are-you'
+
+// //     currentChild.removeChild(currentChild.firstElementChild); // remove o primeiro elemento do filho atual, no caso a tag <h2>
+
+// //   }
+
+// }
+    </script>
+</body>
+</html>
