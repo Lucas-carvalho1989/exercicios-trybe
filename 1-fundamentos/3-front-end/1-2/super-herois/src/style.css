@@ -1,0 +1,36 @@
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#name {
+text-align: center;
+font-weight: 700;
+font-size: large;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin:  auto;
+}
+#image {
+  border-radius: 5px;
+}
+#button {
+background-color: rgb(26, 216, 121, 0.2);
+color:rgb(2, 63, 26);
+border-radius: 4px;
+box-shadow: 2px 1px rgba(1, 62, 25, 0.5);
+font-size: medium;
+font-weight: 700;
+padding: 10px;
+width: 320px;
+cursor: pointer;
+
+}
+#button:hover {
+  background-color: rgba(6, 141, 74, 0.5);
+  color: rgba(1, 33, 14);
+}
