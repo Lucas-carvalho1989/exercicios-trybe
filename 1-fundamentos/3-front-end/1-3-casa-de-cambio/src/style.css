@@ -1,0 +1,89 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background:  rgba(40, 44, 51, 1);
+  ;
+}
+
+.title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 78.72px;
+  font-family: 'Fira Code', monospace;
+  width: 517px;
+  height: 74px;
+  margin-top: 63px;
+  margin-left: 306px;
+}
+
+span {
+  color:rgba(150, 235, 149, 1);
+}
+
+.inputs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  
+}
+
+.text-digite-moeda {
+  color: rgb(240, 248, 255);
+  margin-left: 306px;
+  height: 15px;
+  font-family: 'Fira Code', monospace;
+  font-weight: 400;
+}
+.input-moedas {
+  color: rgb(240, 248, 255);
+  background: rgba(217, 217, 217, 0.1);
+  font-size: large;
+  width: 171px;
+  height: 48px;
+  border-radius: 10px;
+  margin-top: 8px;
+  margin-left:306px;
+  padding: 10px;
+  border: none;
+}
+.button-pesquisar {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Fira Code', monospace;
+  background-color: rgba(150, 235, 149, 1) ;
+  color: rgba(55, 55, 55, 1);
+  width: 171px;
+  height: 48px;
+  border-radius: 10px;
+  border: none;
+ margin-top: 9px;
+}
+
+.campo-de-resultado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: 900px;
+  height: 583px;
+  margin-top: 24px;
+  margin-left: 306px;
+  background: rgba(255, 255, 255, 0.06);
+  font-family: 'Fira Code', monospace;
+  border-radius: 20px;
+}
+.text-moedas {
+ text-align: center;
+  font-family: 'Fira Code', monospace;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(240, 248, 255);
+ 
+}
