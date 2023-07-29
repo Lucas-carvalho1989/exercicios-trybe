@@ -1,0 +1,44 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #eeeeee;
+}
+
+.app {
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttonPets {
+  border: none;
+  background-color: #333333;
+  border-radius: 5px;
+  color: #fff;
+  padding: 20px;
+  width: 150px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.buttonPets:hover {
+  background-color: #000000;
+  box-shadow: 3px 3px 12px #333;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#img {
+  border-radius: 5px;
+  box-shadow: 3px 3px 12px #333;
+  width: 100%;
+  padding: 10px;
+}
